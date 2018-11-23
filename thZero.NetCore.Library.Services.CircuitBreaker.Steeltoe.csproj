@@ -4,6 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe</AssemblyName>
     <PackageId>thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe</PackageId>
+    <Description></Description>
+    <Authors>thZero.com</Authors>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -11,12 +13,9 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/thzero/thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe</RepositoryUrl>
     <PackageProjectUrl>https://github.com/thzero/thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe</PackageProjectUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <Authors>thZero.com</Authors>
-    <Description />
-    <RootNamespace>thZero.AspNetCore</RootNamespace>
+    <RepositoryUrl>https://github.com/thzero/thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
