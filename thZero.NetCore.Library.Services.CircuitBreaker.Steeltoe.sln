@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thZero.NetCore.Library.Serv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thZero.NetCore.Library", "..\thZero.NetCore.Library\thZero.NetCore.Library.csproj", "{A48759D9-6139-426B-8A56-9B09D5BD6588}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thZero.NetCore.Library.CircuitBreaker.Steeltoe", "..\thZero.NetCore.Library.CircuitBreaker.Steeltoe\thZero.NetCore.Library.CircuitBreaker.Steeltoe.csproj", "{3FEA40EE-60AE-4C18-B70B-DB336BF94F69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A48759D9-6139-426B-8A56-9B09D5BD6588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A48759D9-6139-426B-8A56-9B09D5BD6588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A48759D9-6139-426B-8A56-9B09D5BD6588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEA40EE-60AE-4C18-B70B-DB336BF94F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEA40EE-60AE-4C18-B70B-DB336BF94F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEA40EE-60AE-4C18-B70B-DB336BF94F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEA40EE-60AE-4C18-B70B-DB336BF94F69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
