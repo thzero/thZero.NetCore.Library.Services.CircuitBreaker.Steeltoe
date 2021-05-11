@@ -1,6 +1,6 @@
 ﻿/* ------------------------------------------------------------------------- *
 thZero.NetCore.Library.Services.CircuitBreaker.Steeltoe
-Copyright (C) 2016-2019 thZero.com
+Copyright (C) 2016-2021 thZero.com
 
 <development [at] thzero [dot] com>
 
@@ -22,6 +22,7 @@ using System.Threading;
 
 using Microsoft.Extensions.Logging;
 
+using Steeltoe.CircuitBreaker;
 using Steeltoe.CircuitBreaker.Hystrix;
 using Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook;
 using Steeltoe.CircuitBreaker.Hystrix.Strategy.Options;
@@ -66,7 +67,7 @@ namespace thZero.Services
         {
             Service = service;
         }
-        public ServiceHystrixCommand(TService service, TRequest request, IInstrumentationPacket instrumentation, IHystrixCommandGroupKey group, IHystrixCommandKey key, IHystrixThreadPoolKey threadPoolKey, IHystrixCircuitBreaker circuitBreaker, IHystrixThreadPool threadPool, IHystrixCommandOptions commandOptionsDefaults, IHystrixThreadPoolOptions threadPoolOptionsDefaults, HystrixCommandMetrics metrics, SemaphoreSlim fallbackSemaphore, SemaphoreSlim executionSemaphore, HystrixOptionsStrategy optionsStrategy, HystrixCommandExecutionHook executionHook, Func<TResult> run, Func<TResult> fallback, ILogger logger = null)
+        public ServiceHystrixCommand(TService service, TRequest request, IInstrumentationPacket instrumentation, IHystrixCommandGroupKey group, IHystrixCommandKey key, IHystrixThreadPoolKey threadPoolKey, ICircuitBreaker circuitBreaker, IHystrixThreadPool threadPool, IHystrixCommandOptions commandOptionsDefaults, IHystrixThreadPoolOptions threadPoolOptionsDefaults, HystrixCommandMetrics metrics, SemaphoreSlim fallbackSemaphore, SemaphoreSlim executionSemaphore, HystrixOptionsStrategy optionsStrategy, HystrixCommandExecutionHook executionHook, Func<TResult> run, Func<TResult> fallback, ILogger logger = null)
             : base(request, instrumentation, group, key, threadPoolKey, circuitBreaker, threadPool, commandOptionsDefaults, threadPoolOptionsDefaults, metrics, fallbackSemaphore, executionSemaphore, optionsStrategy, executionHook, run, fallback, logger)
         {
             Service = service;
