@@ -23,7 +23,7 @@ using Microsoft.Extensions.Logging;
 
 namespace thZero.Services
 {
-    public abstract class ServiceBaseCircuitBreaker<TCommand, TResult> : ServiceLoggableBase<ServiceBaseCircuitBreaker<TCommand, TResult>>
+    public abstract class ServiceBaseCircuitBreaker<TCommand, TResult> : ServiceBase<ServiceBaseCircuitBreaker<TCommand, TResult>>
         where TCommand : BaseHystrixCommand<TResult>
     {
         public ServiceBaseCircuitBreaker(ILogger<ServiceBaseCircuitBreaker<TCommand, TResult>> logger) : base(logger)

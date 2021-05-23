@@ -27,6 +27,8 @@ using Steeltoe.CircuitBreaker.Hystrix;
 using Steeltoe.CircuitBreaker.Hystrix.Strategy.ExecutionHook;
 using Steeltoe.CircuitBreaker.Hystrix.Strategy.Options;
 
+using thZero.Instrumentation;
+
 namespace thZero.Services
 {
     public abstract class ServiceHystrixCommand<TService, TRequest, TResult> : RequestHystrixCommand<TRequest, TResult>
